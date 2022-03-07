@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+html, body {
+    color: #333;
+    min-width: 1280px; /* 모바일 설정 */
+}
+
+/* header */
+header {
+    height: 80px;
+    line-height: 80px;
+    background-color: #dc8174;
+}
+header div {
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header div h1 a {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+} /* 최상단 gang ji ung / resum 부분 완료 */
+
+/* main_visual  */
+.main_visual {
+    width: 100%;
+    height: 800px; /* 원래 800px이였는데 조정 */
+    background: url('/images/이미지/main-pp2.png') center center / cover no-repeat; 
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_visual div {
+    text-align: center;
+}
+.main_visual div h2 {
+    font-size: 80px;
+}
+.main_visual div p {
+    font-size: 40px;
+    margin-top: 30px;
+    color: b8e5d0;
+} /* 메인비주얼 끝 */
+
+/* best portfolio 베스트 포트폴리오*/
+.best {
+    margin: 150px 0; /* 전체 레이아웃 띄우는 간격 동일해야함 */
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-color: #F2BF91;
+    color: #734C36;
+}
+.best h3 {
+    font-size: 45px;
+    text-align: center;
+    /* text-align: right; 
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 40px; */
+    /*오른쪽으로 옮길시 */
+}
+.best .bg {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-color: #F2BF91;
+    padding: 100px 0;
+}
+.best .bg .best_box {
+    margin-bottom: 0;
+}
+.best .best_box { /* 영상 전체 크기는 조금 더 비중이 큰 곳에 더 줘야한다  */
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* 1번째  */
+.best .best_box .info {
+    width: 40%;
+} /* 텍스트 비율 */
+.best .best_box .info .cate {
+    font-size: 18px;
+    font-weight: bold;
+}
+.best .best_box .info h4 {
+    font-size: 30px;
+}
+.best .best_box .info .text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5; /* 현재 픽셀이 16이였을때 16 x 1.5 = 24 */
+}
+.best .best_box .info dl /* 2번쨰 */{ 
+    display: flex;
+    margin-bottom: 10px;
+}
+.best .best_box .info dl dt {
+    width: 28%;
+    font-weight: bold;
+}
+.best .best_box .info ul {
+    display: flex;
+    margin-top: 30px;
+}
+.best .best_box .info ul li {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #f0cdbd;
+    margin-right: 10px;
+}
+.best .best_box .info ul li a {
+    padding: 0 25px;
+}
+.best .best_box .info ul li:first-of-type {
+
+    background-color: #da786b;
+}
+.best .best_box .info ul li:last-of-type {
+    background-color: #f0cdbd;
+}
+
+.best .best_box .info ul li:first-of-type a {
+    color: #fff;
+}
+.best .best_box .youtube_list {
+    width: 55%;
+} /* 영상비율 */  
+/* 왜 합이 95%냐면 둘 사이 간격을 띄어주기 위함 / 만약 간격 좁히고 싶다면 둘 비율을 조절하면 됌*/
+.best .best_box .youtube_list div {
+    width: 100%;
+    padding-bottom: 56.25%; /* 화면 비율 지켜주는거 / 아이포지션 설정 해줘야함 */
+    position: relative;
+}
+.best .best_box .youtube_list div iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 2번째 */
+.best .best_box .web_design { 
+    width: 55%;
+}
+.best .best_box .web_design figure img {
+    width: 100%;
+}
+
+/* 카테고리별 유튜브 적용 */
+.youtube_wrap {
+    margin: 150px 0;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-color: #F2CB9B;
+    color: #734C36;
+}
+.youtube_wrap .youtube_menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+} 
+.youtube_wrap .youtube_menu li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    border: 1px solid #da786b;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+.youtube_wrap .youtube_menu li.on {
+    background-color: #da786b;
+    box-shadow: 2px 3px 20px rgba(218, 120, 107, 0.8)
+}
+.youtube_wrap .youtube_menu li.on a {
+    color: #fff;
+}
+
+.youtube_wrap .youtube_cont .menu_cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+}
+.youtube_wrap .youtube_cont .menu_cont.on {
+    display: flex;
+}
+.youtube_wrap .menu_cont .box {
+    width: 49%; 
+    border: 1px solid #734C36;
+    box-sizing: border-box;
+    margin-bottom: 30px; 
+}
+.youtube_list {
+    width: 100%;
+}
+.youtube_list div {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.youtube_list div iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.youtube_wrap .menu_cont .box .info {
+    padding: 30px;
+}
+.info h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+.info dl dt {
+    width: 20%;
+    font-weight: bold;
+}
+.info dl dd a {
+    font-weight: bolder;
+}
+.info dl dd:hover a {
+    text-decoration: underline;
+    color: wheat;
+}
+h3 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* 2D 디자인 작성 */
+.g_design {
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    background-color: #EDF2C2;
+    color: #8A52D9;
+
+    padding: 150px 0;
+
+}
+.g_design em {
+    width: 1280px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+    
+}
+.g_design .img_list {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; /* 밑으로 자동으로 떨어지게끔 설정 */
+}
+.g_design .img_list div {
+    width: 24%;
+}
+.g_design .img_list div figure {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.g_design .img_list div figure img {
+    transition: 0.8s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.g_design .img_list div ul {
+    background-color: #fff;
+    padding: 20px;
+}
+.g_design .img_list div ul li:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.g_design .img_list div:hover {
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.4);
+}
+.g_design .img_list div:hover figure img {
+    transform: scale(1.2); /* 이미지 확대 */
+}
+
+/* 푸터 footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+}
+footer ul li {
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+footer ul li:first-of-type {
+    background-color: #fff;
+}
+footer ul li:first-of-type a {
+    color: #333;
+    font-weight: bold;
+}
+footer p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
