@@ -16,6 +16,7 @@ html, body {
 header {
     height: 80px;
     line-height: 80px;
+    background-color: #dc8174;
 }
 header div {
     width: 1280px;
@@ -24,6 +25,7 @@ header div {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
 }
 header div h1 a {
     position: absolute;
@@ -35,10 +37,10 @@ header div h1 a {
 /* main_visual  */
 .main_visual {
     width: 100%;
-    height: 800px;
-    background: url('../images/이미지/visual1-3.jpg') center center / cover no-repeat; 
+    height: 800px; /* 원래 800px이였는데 조정 */
+    background: url('/images/이미지/main-pp2.png') center center / cover no-repeat; 
     background-attachment: fixed;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,23 +54,28 @@ header div h1 a {
 .main_visual div p {
     font-size: 40px;
     margin-top: 30px;
-    color: rgba(255, 255, 255, 0.7);
+    color: b8e5d0;
 } /* 메인비주얼 끝 */
 
 /* best portfolio 베스트 포트폴리오*/
 .best {
     margin: 150px 0; /* 전체 레이아웃 띄우는 간격 동일해야함 */
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-color: #F2BF91;
+    color: #734C36;
 }
 .best h3 {
     font-size: 45px;
-    /* text-align: center; */
-    text-align: right; /*오른쪽으로 옮길시 */
+    text-align: center;
+    /* text-align: right; 
     width: 1280px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 40px; */
+    /*오른쪽으로 옮길시 */
 }
 .best .bg {
-    background-color: #eee;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-color: #F2BF91;
     padding: 100px 0;
 }
 .best .bg .best_box {
@@ -113,15 +120,20 @@ header div h1 a {
 .best .best_box .info ul li {
     height: 45px;
     line-height: 45px;
-    border: 1px solid #333;
+    border: 1px solid #F2BF91;
     margin-right: 10px;
 }
 .best .best_box .info ul li a {
     padding: 0 25px;
 }
 .best .best_box .info ul li:first-of-type {
-    background-color: #333;
+
+    background-color: #734C36;
 }
+.best .best_box .info ul li:last-of-type {
+    background-color: #F2CB9B;
+}
+
 .best .best_box .info ul li:first-of-type a {
     color: #fff;
 }
@@ -153,23 +165,27 @@ header div h1 a {
 /* 카테고리별 유튜브 적용 */
 .youtube_wrap {
     margin: 150px 0;
+    background-image: linear-gradient(to left, #feada6, #ffecd2);
+    background-color: #F2CB9B;
+    color: #734C36;
 }
 .youtube_wrap .youtube_menu {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+
 } 
 .youtube_wrap .youtube_menu li {
     height: 45px;
     line-height: 45px;
     padding: 0 30px;
-    border: 1px solid #ccc;
+    border: 1px solid #734C36;
     box-sizing: border-box;
     margin: 0 5px;
 }
 .youtube_wrap .youtube_menu li.on {
-    background-color: #333;
-    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.3)
+    background-color: #8C3A1C;
+    box-shadow: 2px 3px 20px rgba(140, 58, 28, 0.7)
 }
 .youtube_wrap .youtube_menu li.on a {
     color: #fff;
@@ -188,7 +204,7 @@ header div h1 a {
 }
 .youtube_wrap .menu_cont .box {
     width: 49%; 
-    border: 1px solid #ccc;
+    border: 1px solid #734C36;
     box-sizing: border-box;
     margin-bottom: 30px; 
 }
@@ -236,14 +252,19 @@ h3 {
 }
 /* 2D 디자인 작성 */
 .g_design {
-    background-color: #eee;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    background-color: #EDF2C2;
+    color: #8A52D9;
+
     padding: 150px 0;
+
 }
 .g_design em {
     width: 1280px;
     margin: 0 auto;
     display: block;
     text-align: right;
+    
 }
 .g_design .img_list {
     width: 1280px;
@@ -281,6 +302,7 @@ h3 {
 .g_design .img_list div:hover figure img {
     transform: scale(1.2); /* 이미지 확대 */
 }
+
 /* 푸터 footer */
 footer {
     background-color: #333;
