@@ -1,4 +1,5 @@
-@charset "utf-8";
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Sunflower:wght@500&display=swap');
 
 * {margin: 0; padding: 0;}
 li {list-style: none;}
@@ -17,6 +18,7 @@ header {
     height: 80px;
     line-height: 80px;
     background-color: #dc8174;
+    
 }
 header div {
     width: 1280px;
@@ -32,7 +34,60 @@ header div h1 a {
     left: 0;
     top: 50%;
     transform: translateY(-50%); 
-} /* 최상단 gang ji ung / resum 부분 완료 */
+    color: #ffecd2;
+    
+} 
+
+/* 최상단 gang ji ung / resum 부분 완료 */
+
+/* 개인정보 .about */
+.about {
+    padding: 150px 0;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.about .about_box {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about .about_box figure {
+    width: 30%;
+    height: 500px;
+}
+.about .about_box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about_box .about_info {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about_box .about_info > div {
+    width: 45%;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.about h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about p {
+    /* margin-bottom: 5px; */
+    font-size: 20px;
+}
+.about dl {
+    font-size: 20px;
+}
+.about dl dt {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
 /* main_visual  */
 .main_visual {
@@ -40,10 +95,11 @@ header div h1 a {
     height: 800px; /* 원래 800px이였는데 조정 */
     background: url('/images/이미지/main-pp2.png') center center / cover no-repeat; 
     background-attachment: fixed;
-    color: rgba(255, 255, 255, 0.8);
+    color: #734C36;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .main_visual div {
     text-align: center;
@@ -59,10 +115,13 @@ header div h1 a {
 
 /* best portfolio 베스트 포트폴리오*/
 .best {
-    margin: 150px 0; /* 전체 레이아웃 띄우는 간격 동일해야함 */
+    padding: 150px; /* 전체 레이아웃 띄우는 간격 동일해야함 */
     background: linear-gradient(to right, #ffecd2, #fcb69f);
     background-color: #F2BF91;
     color: #734C36;
+    font-family: 'Jua', sans-serif;
+ 
+    
 }
 .best h3 {
     font-size: 45px;
@@ -120,7 +179,7 @@ header div h1 a {
 .best .best_box .info ul li {
     height: 45px;
     line-height: 45px;
-    border: 1px solid #F2BF91;
+    border: 1px solid #f0cdbd;
     margin-right: 10px;
 }
 .best .best_box .info ul li a {
@@ -128,10 +187,10 @@ header div h1 a {
 }
 .best .best_box .info ul li:first-of-type {
 
-    background-color: #734C36;
+    background-color: #da786b;
 }
 .best .best_box .info ul li:last-of-type {
-    background-color: #F2CB9B;
+    background-color: #f0cdbd;
 }
 
 .best .best_box .info ul li:first-of-type a {
@@ -156,7 +215,7 @@ header div h1 a {
 
 /* 2번째 */
 .best .best_box .web_design { 
-    width: 55%;
+    width: 40%;
 }
 .best .best_box .web_design figure img {
     width: 100%;
@@ -164,31 +223,35 @@ header div h1 a {
 
 /* 카테고리별 유튜브 적용 */
 .youtube_wrap {
-    margin: 150px 0;
-    background-image: linear-gradient(to left, #feada6, #ffecd2);
+    padding: 150px;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
     background-color: #F2CB9B;
     color: #734C36;
+    font-family: 'Jua', sans-serif;
+
 }
 .youtube_wrap .youtube_menu {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    font-weight: bold;
+    
 
 } 
 .youtube_wrap .youtube_menu li {
     height: 45px;
     line-height: 45px;
     padding: 0 30px;
-    border: 1px solid #734C36;
+    border: 1px solid #da786b;
     box-sizing: border-box;
     margin: 0 5px;
 }
 .youtube_wrap .youtube_menu li.on {
-    background-color: #8C3A1C;
-    box-shadow: 2px 3px 20px rgba(140, 58, 28, 0.7)
+    background-color: #da786b;
+    box-shadow: 2px 3px 20px rgba(218, 120, 107, 0.8)
 }
 .youtube_wrap .youtube_menu li.on a {
-    color: #fff;
+    color: #ffecd2;
 }
 
 .youtube_wrap .youtube_cont .menu_cont {
@@ -249,12 +312,79 @@ h3 {
     font-size: 45px;
     text-align: center;
     margin-bottom: 40px;
+
 }
+
+/* 웹&앱 디자인 .web_design */
+.web_wrap { 
+    /* background-color: #ccc; */
+    /* color: #fff; */
+    margin: 150px 0;
+}
+.web_wrap .web_box {
+    width: 1280px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.web_wrap .web_box .web {
+    width: 32%; /* 여백없이 하려면 33.3% 적용 */
+    margin-bottom: 50px;
+}
+.web_wrap .web_box .web figure { 
+    height: 350px;
+
+}
+.web_wrap .web figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.web_wrap .web_box .info {  
+    padding-top: 20px;
+} 
+
+/* .info 공통스타일 */
+.info .text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.info ul {display: flex; margin-top: 30px;}
+.info ul li:first-of-type {
+    /* background-color: #333; */
+    /* background: rgb(254,131,53);
+    background: linear-gradient(90deg, rgba(254,131,53,1) 0%, rgba(241,31,16,1) 100%); */
+    background-color: #da786b;
+    /*border: 1px solid rgb(254,131,53); */
+    border: 1px solid #f0cdbd;
+}
+
+.info ul li {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #f0cdbd;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: #f0cdbd;
+}
+.info ul li a {
+    padding: 0 20px;
+}
+.info ul li:first-of-type a {
+    color: #fff;
+}
+
+
 /* 2D 디자인 작성 */
 .g_design {
-    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
     background-color: #EDF2C2;
-    color: #8A52D9;
+    color: #734C36;
+    font-family: 'Jua', sans-serif;
 
     padding: 150px 0;
 
@@ -264,6 +394,7 @@ h3 {
     margin: 0 auto;
     display: block;
     text-align: right;
+    
     
 }
 .g_design .img_list {
@@ -333,4 +464,5 @@ footer p {
     color: rgba(255, 255, 255, 0.5);
     margin-top: 20px;
 }
+
 
