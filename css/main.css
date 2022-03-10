@@ -43,7 +43,7 @@ header div h1 a {
 /* 개인정보 .about */
 .about {
     padding: 150px 0;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: linear-gradient(to right, #f4f5e4 0%, #ffecd2 100%);
 }
 .about .about_box {
     width: 1280px;
@@ -319,7 +319,8 @@ h3 {
 .web_wrap { 
     /* background-color: #ccc; */
     /* color: #fff; */
-    margin: 150px 0;
+    padding: 150px 0;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
 }
 .web_wrap .web_box {
     width: 1280px; 
@@ -385,7 +386,6 @@ h3 {
     background-color: #EDF2C2;
     color: #734C36;
     font-family: 'Jua', sans-serif;
-
     padding: 150px 0;
 
 }
@@ -417,21 +417,25 @@ h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 .g_design .img_list div ul {
-    background-color: #fff;
+    background-color: #97542d;
+    color: #fff;
     padding: 20px;
 }
 .g_design .img_list div ul li:first-of-type {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 7px;
+
 }
 .g_design .img_list div:hover {
     box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.4);
 }
 .g_design .img_list div:hover figure img {
     transform: scale(1.2); /* 이미지 확대 */
+
 }
 
 /* 푸터 footer */
